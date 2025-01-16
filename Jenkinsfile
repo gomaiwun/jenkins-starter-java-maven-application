@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                egv.deployApp
+                gv.deployApp()
             }
         }
     }
