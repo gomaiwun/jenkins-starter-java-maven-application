@@ -4,7 +4,7 @@ def buildJar() {
     echo "JAR build complete"
 }
 
-def buildAndPushImage(imageTag) {
+def buildAndPushImage() {
     withCredentials([usernamePassword(credentialsId: 'docker-hub-repo', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
         echo "Building and pushing Docker image..."
         sh "docker build -t gomaiwun/demo-app:jma-2.0 ."

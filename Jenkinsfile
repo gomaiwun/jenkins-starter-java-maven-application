@@ -25,7 +25,7 @@ pipeline {
         stage('Build image') {
             steps {
                 script {
-                    gv.buildImage()
+                    gv.buildAndPushImage()
                 }
             }
         }
