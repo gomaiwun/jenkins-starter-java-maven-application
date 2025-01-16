@@ -13,5 +13,5 @@ def builImage(){
 }
 
 def deployApp(){
-    echo 'Deploying....'
+    echo 'Deploying Application...'
 }
