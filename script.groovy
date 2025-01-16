@@ -19,3 +19,5 @@ def deployApp() {
     // sh "your_deployment_command"
     echo "Deployment complete"
 }
+
+return this
